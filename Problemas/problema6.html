@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/P6.js"></script>
     <title>Titulo</title>
 </head>
 <body>
@@ -12,10 +13,18 @@
             después de un mes si el banco paga a razón de 2% mensual
         </p>
         <div class="formulario">
-            <form action="" method="post">
-                <label for="">Capital a invertir: </label>
+            <form action="" method="post" name="form" onsubmit="return verificar(this)">
+                <label for="">Dia de nacimiento: </label>
                 <br>
-                <input type="number" name="capital" id="capital">
+                <input type="number" name="dia" id="dia">
+                <br>
+                <label for="">Mes de nacimiento (en numero): </label>
+                <br>
+                <input type="number" name="mes" id="mes">
+                <br>
+                <label for="">Año de nacimiento: </label>
+                <br>
+                <input type="number" name="year" id="year">
                 <br>
                 <input type="submit" name="enviar" value="Enviar Registro">
                 <br>

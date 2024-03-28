@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/P3.js"></script>
     <title>Titulo</title>
 </head>
 <body>
@@ -12,10 +13,10 @@
             después de un mes si el banco paga a razón de 2% mensual
         </p>
         <div class="formulario">
-            <form action="" method="post">
-                <label for="">Capital a invertir: </label>
+            <form action="" method="post" name="form" onsubmit="return verificar(this)">
+                <label for="">Total de la compra: </label>
                 <br>
-                <input type="number" name="capital" id="capital">
+                <input type="number" name="compra" id="compra">
                 <br>
                 <input type="submit" name="enviar" value="Enviar Registro">
                 <br>
