@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #CB997E;
+}
+
+body {
+    background-color: #FFE8D6;
+}
+
+.card {
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 52px;
+    padding: 24px;
+}
+
+.card h5 {
+    padding-left: 15px;
+}
+
+.btn, input[type="text"] {
+    width: 250px;
+}

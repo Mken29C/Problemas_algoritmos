@@ -64,13 +64,15 @@ function verificar(form) {
                 form.year.focus();
                 return false;
             } else {
-                var edad = Math.abs(parseInt(yact) - parseInt(year));
-                var dmes = Math.abs(parseInt(mes) - parseInt(mact));
-                var ddia = Math.abs(parseInt(dact) - parseInt(dia));
+                var edad = parseInt(yact) - parseInt(year);
+                var dmes = parseInt(mes) - parseInt(mact);
+                var ddia = parseInt(dia) - parseInt(dact);
                 if(ddia > 0){
                     edad--;
+                } else if(dmes > 0){
+                    edad--;
                 }
-                alert(edad);
+                alert("Actualmente tienes: " + edad + " años");
             }
         }
     }
